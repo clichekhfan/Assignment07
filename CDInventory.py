@@ -20,7 +20,6 @@ lstTbl = []  # list of lists to hold data
 dicRow = {}  # list of data row
 strFileName = 'CDInventory.dat'  # data storage file
 objFile = None  # file object
-# lstTbl = [{'ID':1,'title':'WAP','artist':'Cardi B'},{'ID':2,'title':'Laugh Now Cry Later','artist':'Drake'},{'ID':3,'title':'Rockstar','artist':'DaBaby'},{'ID':4,'title':'Blinding Lights','artist':'The Weeknd'},{'ID':5,'title':'Whats Poppin','artist':'Jack Harlow'},{'ID':6,'title':'7 Summers','artist':'Morgan Wallen'},{'ID':7,'title':'Watermelon Sugar','artist':'Harry Styles'},{'ID':8,'title':'Roses','artist':'SAINT JHN'},{'ID':9,'title':'Savage Love','artist':'Jawsh 685'},{'ID':10,'title':'I Hope','artist':'Gabby Barrett'}]
 
 # -- PROCESSING -- #
 class DataProcessor:
@@ -165,7 +164,6 @@ class IO:
             None.
 
         """
-        #TODO:sort inventory by ID prior to display
         print('======= The Current Inventory: =======')
         print('ID\tCD Title (by: Artist)')
         for row in table:
@@ -187,8 +185,6 @@ class IO:
             lstTplUserinput (list of tuples): 2D data structure (list of tuples) that holds multiple user input tuples.
 
         """
-        #TODO: check for duplicate entries
-        #TODO: check for empty fields
         print('input "BACK" to exit')
         lstTplUserinputs = []
         while True:
